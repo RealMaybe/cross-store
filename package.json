@@ -1,26 +1,38 @@
 {
-  "name": "cross-store",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "files": [
-    "dist",
-    "index.d.ts"
-  ],
-  "main": "./dist/counter.umd.cjs",
-  "module": "./dist/counter.js",
-  "types": "./index.d.ts",
-  "exports": {
+    "name": "cross-store",
+    "version": "0.0.0",
+    "author": "RealMaybe",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build"
+    },
+    "files": [
+        "dist",
+        "index.d.ts"
+    ],
+    "main": "./dist/CrossStore.umd.cjs",
+    "module": "./dist/CrossStore.js",
     "types": "./index.d.ts",
-    "import": "./dist/counter.js",
-    "require": "./dist/counter.umd.cjs"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
-  },
-  "devDependencies": {
-    "typescript": "~5.7.3",
-    "vite": "^6.1.1"
-  }
+    "exports": {
+        "types": "./index.d.ts",
+        "import": "./dist/CrossStore.js",
+        "require": "./dist/CrossStore.umd.cjs"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.21",
+        "@vitest/eslint-plugin": "^1.2.7",
+        "eslint": "^9.29.0",
+        "eslint-config-prettier": "^10.1.5",
+        "eslint-plugin-prettier": "^5.5.1",
+        "prettier": "^3.6.1",
+        "tslib": "^2.8.1",
+        "typescript": "~5.7.3",
+        "vite": "^6.1.1",
+        "vitest": "^3.2.4"
+    },
+    "dependencies": {
+        "jsdoc": "^4.0.4"
+    }
 }

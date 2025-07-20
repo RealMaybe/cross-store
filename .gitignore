@@ -1,4 +1,4 @@
-# Logs
+# 日志
 logs
 *.log
 npm-debug.log*
@@ -12,13 +12,21 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# 编辑器目录和文件
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*.swo
+*.bak

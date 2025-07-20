@@ -1,23 +1,13 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import { setupCounter } from '../lib/main'
+/* main entry point for the library */
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+import { Store } from "@/storage/Store";
+import { Communicate } from "@/communicate/Communicate";
+import * as typeUtils from "@/typeUtils";
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+/* ========== */
+
+// Create a public function object
+const checker = { ...typeUtils } as const;
+
+// export the classes and functions
+export { Store, Communicate, checker };
