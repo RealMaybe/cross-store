@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrossStore - RealMaybe</title>
+    <script>
+        // 处理重定向后的路径
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+
+            if (redirect && redirect !== location.href)
+                history.replaceState(null, null, redirect);
+        })();
+    </script>
+
     <!-- style -->
     <style>
         #app {
