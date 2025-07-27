@@ -1,7 +1,7 @@
 /* 无效类型守卫 */
 
 import { objIs } from "@/var";
-import { isNumber } from "@/typeUtils";
+import { isNumber } from "@/utils";
 
 /* ========== */
 

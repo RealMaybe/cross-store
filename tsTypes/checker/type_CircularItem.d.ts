@@ -13,6 +13,6 @@ export type CircularItem = CircularObject | CircularArray;
  * 循环引用检查器的返回结果类型。
  */
 export type CheckCircularResult<T extends CircularItem> = {
-    circular: boolean,
-    value: T
+    isCircular: boolean,
+    value: T | undefined
 };

@@ -2,9 +2,7 @@
 
 import { objKeys } from "@/var";
 
-
 /* ========== */
-
 
 /**
  * 检查两个对象是否拥有相同的键
@@ -16,9 +14,9 @@ export function haveSameKeys(
     obj1: { [key: string]: any },
     obj2: { [key: string]: any }
 ): {
-    judge: boolean,
-    missingKeys: Array<string>,
-    extraKeys: Array<string>
+    judge: boolean;
+    missingKeys: Array<string>;
+    extraKeys: Array<string>;
 } {
     const keys1 = new Set(objKeys(obj1));
     const keys2 = new Set(objKeys(obj2));

@@ -31,9 +31,9 @@ export const checkType = (t, e = !1) => {
     if (isArray(t)) return "array";
     if (isBoolean(e) && !e) {
         if (isNotANumber(t)) return "NaN";
-        if (isInfinity(t)) return "Infinity"
+        if (isInfinity(t)) return "Infinity";
     }
-    return typeof t
+    return typeof t;
 };
 
 export const getTypesFromArray = ({ val: t, skip: e }) => t.map(t => checkType(t, e));
@@ -45,17 +45,15 @@ export const isInvalid = (t, e) => {
             { type: "null", check: isNull },
             { type: "undefined", check: isUndefined },
             { type: "NaN", check: isNotANumber },
-            { type: "Infinity", check: isInfinity }
+            { type: "Infinity", check: isInfinity },
         ];
 
-    for (const { type: e, check: o }
-        of i)
-        if (!n.includes(e) && o(t)) return !0;
+    for (const { type: e, check: o } of i) if (!n.includes(e) && o(t)) return !0;
 
-    return isFunction(o) && o(t)
+    return isFunction(o) && o(t);
 };
 
 export const isEffective = (t, e) => {
     const n = (null == e ? void 0 : e.affirm) || null;
-    return !(!isFunction(n) || !n(t)) || !isInvalid(t, e)
+    return !(!isFunction(n) || !n(t)) || !isInvalid(t, e);
 };

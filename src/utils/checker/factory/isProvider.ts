@@ -1,7 +1,7 @@
 /* isProvider */
 
 // import
-import { isObjectAndNotArray } from "@/typeUtils";
+import { isObjectAndNotArray } from "@/utils";
 
 // type
 type Provider = {

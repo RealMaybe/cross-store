@@ -1,6 +1,6 @@
 /* 类型转换工具 */
 
-import { isString } from "@/typeUtils";
+import { isString } from "@/utils";
 
 /* ========== */
 

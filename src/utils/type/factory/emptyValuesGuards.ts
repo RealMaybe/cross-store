@@ -1,6 +1,6 @@
 /* 空值检测工具 */
 
-import { isString, isArray, isPlainObject } from "@/typeUtils";
+import { isString, isArray, isPlainObject } from "@/utils";
 
 /* ========== */
 

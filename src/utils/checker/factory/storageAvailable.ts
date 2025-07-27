@@ -1,7 +1,7 @@
 /* 用于检查指定类型的 Web 存储是否可用 */
 
 import type { AvailableStorageType } from "@tsTypes";
-import { isNull } from "@/typeUtils";
+import { isNull } from "@/utils";
 
 /* ========== */
 

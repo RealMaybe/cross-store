@@ -1,7 +1,7 @@
 /* 用户参数验证和格式化 */
 
 import type { } from "@tsTypes";
-import { isString, isObjectAndNotArray } from "@/typeUtils";
+import { isString, isObjectAndNotArray } from "@/utils";
 
 /* ========== */
 

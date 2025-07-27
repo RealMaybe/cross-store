@@ -1,7 +1,7 @@
 /* 类型有效性验证工具 */
 
 import type { InvalidChecker, IgnoreList } from "@tsTypes";
-import { isInfinity, isNull, isNotANumber, isUndefined } from "@/typeUtils";
+import { isInfinity, isNull, isNotANumber, isUndefined } from "@/utils";
 
 /* ========== */
 

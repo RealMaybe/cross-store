@@ -1,7 +1,7 @@
 /* 特殊对象类型守卫 */
 
 import type { Thenable, PromiseWithCatch } from "@tsTypes";
-import { isFunction, isObject, isObjectAndNotArray, isUndefined, toTypeString } from "@/typeUtils";
+import { isFunction, isObject, isObjectAndNotArray, isUndefined, toTypeString } from "@/utils";
 
 /* ========== */
 
